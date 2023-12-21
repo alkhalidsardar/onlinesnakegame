@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+
+body{
+    font-family: 'Gluten', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+}
+.snake {
+    background-color: #12086f;
+}
+
+#game-board{
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: repeat(20 , 20px);
+    grid-template-rows: repeat(20 , 20px);
+    margin: 5px;
+}
+
+.game-border-1{
+border: #12086f solid 10px;
+border-radius: 30px;
+box-shadow: inset 0 0 0 10px #12086f;
+}
+.game-border-2{
+border: #4361ee solid 8px;
+border-radius: 30px;
+box-shadow: inset 0 0 0 10px #4361ee;
+}
+.game-border-3{
+border: #4cc9f0 solid 30px;
+border-radius: 30px;
+box-shadow: inset 0 0 0 5px #4cc9f0;
+}
+
+#instructions{
+position: absolute;
+top: 60%;
+color: #333;
+width: 300px;
+text-align: center;
+text-transform: capitalize;
+padding: 30px;
+margin: 0;
+}
+
+.scores{
+    display: flex;
+    justify-content: space-between;
+}
+.scoreflex{
+    display: flex;
+    flex-direction: column;
+}
+#score{
+    color: #492dff;
+}
+#highScore{
+    color: #1b23ff;
+    display: none;
+}
+#score,#highScore {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+.game-border-3, #logo{
+    background-color: rgb(152, 255, 253);
+}
+.snake{
+    border: #5a5a5a 1px dotted;
+}
+.food{
+    background-color: white;
+    border: #1b23ff 5px solid;
+    border-radius: 10px;
+}
+
+#logo{
+    position: absolute;
+}
+
+
+
+
+
+
+
+
